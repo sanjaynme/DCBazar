@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/history_toolbar"
+        layout="@layout/layout_toolbar_all" />
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/dimen_150dp"
+        android:layout_height="@dimen/dimen_150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:src="@drawable/default_image" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/et_left_margin"
+            android:layout_marginRight="@dimen/et_left_margin"
+            android:orientation="vertical">
+
+            <com.ebpearls.choiceapp.customviews.ExpandableTextView
+                android:id="@+id/tv_readText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="4"
+                android:text="@string/lorem_epsum"
+                app:animation_duration="1000" />
+
+            <com.ebpearls.choiceapp.customviews.CapitalizedTextView
+                android:id="@+id/tv_readMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/dimen_10dp"
+                android:text="@string/read_more"
+                android:textColor="@color/low_imp_bar_end_blue" />
+
+            <Button
+                android:id="@+id/btn_viewReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:background="@drawable/custom_button"
+                android:text="@string/view_report"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_tryAgain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_25dp"
+                android:background="@drawable/custom_button"
+                android:text="@string/tryAgain"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

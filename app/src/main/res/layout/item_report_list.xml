@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_report_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_survey_img_report"
+        android:layout_width="@dimen/dimen_72dp"
+        android:layout_height="@dimen/dimen_72dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        android:layout_marginLeft="@dimen/dimen_56px"
+        android:layout_marginStart="@dimen/dimen_56px"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:padding="0dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_survey_title_report"
+        fontPath="@string/font_proxima_nova_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_survey_img_report"
+        android:layout_marginEnd="@dimen/dimen_30dp"
+        android:layout_marginLeft="@dimen/dimen_100dp"
+        android:layout_marginRight="@dimen/dimen_30dp"
+        android:layout_marginStart="@dimen/dimen_100dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:ellipsize="marquee"
+        android:maxLines="2"
+        android:text="@string/survey_description"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_16sp" />
+
+    <TextView
+        android:id="@+id/tv_survey_desc_report"
+        fontPath="@string/font_proxima_nova_thin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_survey_title_report"
+        android:layout_marginEnd="@dimen/dimen_30dp"
+        android:layout_marginLeft="@dimen/dimen_100dp"
+        android:layout_marginRight="@dimen/dimen_30dp"
+        android:layout_marginStart="@dimen/dimen_100dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/survey_description"
+        android:textSize="@dimen/dimen_13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_below="@id/iv_survey_img_report"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:background="@color/grey" />
+
+</RelativeLayout>

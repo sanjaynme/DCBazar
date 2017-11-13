@@ -1,0 +1,19 @@
+
+    <com.ebpearls.choiceapp.customviews.CapitalizedTextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_defaults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Income"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        />
+
+    <!--    android:layout_marginLeft="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_10dp"-->
+
+
+
+
+

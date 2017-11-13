@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/toolbar_gradient"
+    android:minHeight="?attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/tv_toolbar_title"
+        style="@style/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        tools:text="TITLE" />
+
+    <ImageView
+        android:id="@+id/iv_back_arrow"
+        style="@style/BackArrow"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:padding="@dimen/dimen_15dp"
+        android:src="@drawable/ic_notification_icon"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        style="@style/DrawerIcon" />
+
+    <ImageView
+        android:id="@+id/iv_cross"
+        style="@style/CrossIcon"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/report_list_toolbar"
+            layout="@layout/layout_toolbar_all" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list_report"
+            android:layout_below="@id/report_list_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"/>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:layout_marginRight="-64dp"
+    android:background="@color/menu_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/drawer_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_gradient"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tv_drawer_title"
+            style="@style/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            tools:text="TITLE" />
+
+        <ImageView
+            android:id="@+id/iv_drawer_back_arrow"
+            style="@style/BackArrow" />
+
+        <!-- <ImageView
+             android:id="@+id/iv_drawer_menu"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/ic_menu"
+             android:padding="16dp"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="@dimen/toolbar_menu_rightmargin"/>-->
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_drawer_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/iv_drawer_home"
+                    android:layout_width="@dimen/dimen_105px"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:src="@drawable/ic_home"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:layout_toRightOf="@id/iv_drawer_home"
+                    android:layout_toEndOf="@id/iv_drawer_home"
+                    android:layout_marginLeft="@dimen/dimen_118px"
+                    android:layout_marginStart="@dimen/dimen_118px"
+                    android:text="@string/home" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_92px"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginLeft="@dimen/dimen_31px"
+                    android:layout_marginRight="@dimen/dimen_31px"
+                    android:background="@color/menu_underline"
+                    android:layout_below="@+id/iv_drawer_home" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_drawer_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/iv_drawer_profile"
+                    android:layout_width="@dimen/dimen_105px"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:src="@drawable/ic_my_profile"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:layout_toRightOf="@id/iv_drawer_profile"
+                    android:layout_marginLeft="@dimen/dimen_118px"
+                    android:text="@string/my_profile" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:src="@drawable/ic_grey_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_92px"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginLeft="@dimen/dimen_31px"
+                    android:layout_marginRight="@dimen/dimen_31px"
+                    android:background="@color/menu_underline"
+                    android:layout_below="@+id/iv_drawer_profile" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_drawer_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/iv_drawer_history"
+                    android:layout_width="@dimen/dimen_105px"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:src="@drawable/ic_history"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:layout_toRightOf="@id/iv_drawer_history"
+                    android:layout_marginLeft="@dimen/dimen_118px"
+                    android:text="@string/history" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:src="@drawable/ic_grey_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_92px"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/dimen_31px"
+                    android:layout_marginRight="@dimen/dimen_31px"
+                    android:background="@color/menu_underline"
+                    android:layout_below="@+id/iv_drawer_history" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_drawer_reports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/iv_drawer_reports"
+                    android:layout_width="@dimen/dimen_105px"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:src="@drawable/ic_reports"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:layout_toRightOf="@id/iv_drawer_reports"
+                    android:layout_marginLeft="@dimen/dimen_118px"
+                    android:text="@string/reports" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:src="@drawable/ic_grey_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_92px"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/dimen_31px"
+                    android:layout_marginRight="@dimen/dimen_31px"
+                    android:background="@color/menu_underline"
+                    android:layout_below="@+id/iv_drawer_reports"
+                    android:id="@+id/view" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_drawer_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/iv_drawer_notification"
+                    android:layout_width="@dimen/dimen_105px"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:src="@drawable/ic_notifications"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:layout_toRightOf="@id/iv_drawer_notification"
+                    android:layout_marginLeft="@dimen/dimen_118px"
+                    android:text="@string/notification" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:src="@drawable/ic_grey_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_92px"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/dimen_31px"
+                    android:layout_marginRight="@dimen/dimen_31px"
+                    android:background="@color/menu_underline"
+                    android:layout_below="@+id/iv_drawer_notification" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_drawer_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/iv_drawer_settings"
+                    android:layout_width="@dimen/dimen_105px"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:src="@drawable/ic_setting"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:layout_toRightOf="@id/iv_drawer_settings"
+                    android:layout_marginLeft="@dimen/dimen_118px"
+                    android:text="@string/settings" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_92px"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="@dimen/dimen_92px"
+                    android:src="@drawable/ic_grey_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_92px"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/dimen_31px"
+                    android:layout_marginRight="@dimen/dimen_31px"
+                    android:background="@color/menu_underline"
+                    android:layout_below="@+id/iv_drawer_settings" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

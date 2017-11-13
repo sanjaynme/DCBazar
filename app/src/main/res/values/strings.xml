@@ -1,3 +1,164 @@
 <resources>
+    <!--app name-->
     <string name="app_name">DCBazar</string>
+
+    <!--Fonts-->
+    <string name="font_avenir_black">fonts/Avenir-Black.ttf</string>
+    <string name="font_avenir_book">fonts/Avenir-Book.ttf</string>
+    <string name="font_avenir_heavy">fonts/Avenir-Heavy.ttf</string>
+    <string name="font_avenir_medium">fonts/Avenir-Medium.ttf</string>
+    <string name="font_proxima_nova_black_italic">fonts/Proxima Nova Black Italic.otf</string>
+    <string name="font_proxima_nova_black">fonts/Proxima Nova Bold.otf</string>
+    <string name="font_proxima_nova_bold_italic">fonts/Proxima Nova Bold Italic.otf</string>
+    <string name="font_proxima_nova_bold">fonts/Proxima Nova Bold.otf</string>
+    <string name="font_proxima_nova_thin">fonts/Proxima Nova Thin.otf</string>
+    <string name="font_proxima_nova_regular">fonts/proximanova-regular-webfont.ttf</string>
+    <string name="font_sofiapro_light">fonts/sofiapro-light.otf</string>
+    <string name="font_sf_ui_text_regular">fonts/sf-san-francisco-ui-text-regular.ttf</string>
+
+    <!--DCBAZAR app  FB App ID-->
+    <string name="facebook_app_id">729076340600392</string>
+
+    <!--toolbar title-->
+    <string name="terms_of_services">Terms of Services</string>
+    <string name="Privacy_Policy">Privacy Policy</string>
+    <string name="title_dialog_progress">Please Wait</string>
+
+    <!--Register, Signup And Login-->
+    <string name="create_an_account">Create an account</string>
+    <string name="login">Log In</string>
+    <string name="or_you_can">Or You can</string>
+    <string name="information">Your Information is Safe With Us. Ssh!</string>
+    <string name="email">Email</string>
+    <string name="agree_terms">I agree to <u>Terms of Service</u></string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="password">Password</string>
+    <string name="Age">Age</string>
+    <string name="Gender">Gender</string>
+    <string name="Income">Income</string>
+    <string name="Occupation">Occupation</string>
+    <string name="Postcode">PostCode</string>
+    <string name="message">Your Information is Safe With Us. Ssh!</string>
+    <string name="Continue">Continue</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="terms_agrees">Agrees Terms And Conditions? </string>
+    <string name="terms_and_condition">Terms &amp; Conditions</string>
+    <string name="terms_and_conditions">Agrees Terms And Conditions? Terms &amp; Conditions </string>
+    <!--<string name="terms_conditions">I certify that I have read and understand, and agree to comply with, the terms and conditions described above and that I am elegible to access this web</string>-->
+    <string name="terms_conditions">By signing up to the app, I agree to the \n Terms of Services</string>
+
+
+    <!--ERROR-->
+    <string name="error_firstname">Please enter your first name.</string>
+    <string name="error_lastname">Please enter your last name.</string>
+    <string name="error_email">Please enter a email address.</string>
+    <string name="error_email_valid">Please enter a valid email address.</string>
+    <string name="error_password">Please enter a password.</string>
+    <string name="error_age">Please enter age.</string>
+    <string name="error_age_valid">Please enter an valid age.</string>
+    <string name="error_occupation">Please select an occupation.</string>
+    <string name="error_income">Please select an income.</string>
+    <string name="error_gender">Please select a gender.</string>
+    <string name="error_postcode">Please enter a postcode.</string>
+    <string name="error_postcode_length">Please enter a valid postcode of length 4 to 10 digits.</string>
+
+    <!--Server Error-->
+    <string name="err_server">Unable to process request. Please try again.</string>
+
+
+    <!--Validation for Login and Registration-->
+    <string name="err_empty_email">Please provide an email address.</string>
+    <string name="err_valid_email">Please provide a valid email address.</string>
+    <string name="err_empty_password">Please enter a password.</string>
+    <string name="err_empty_current_pass">Please provide current password.</string>
+    <string name="err_empty_new_pass">Please provide a new password.</string>
+    <string name="err_re_type_pass">Please confirm new password.</string>
+    <string name="err_match_current_old_pass">Confirm password and new password should match.</string>
+    <string name="err_password_length">Password must be 8 character long.</string>
+    <string name="show_password">Show Password</string>
+    <string name="old_password">Current Password</string>
+    <string name="submit">Submit</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="new_password">New Password</string>
+    <string name="profile_settings">Profile Settings</string>
+    <string name="my_profile">My Profile</string>
+    <string name="history">History</string>
+    <string name="need_help_contact_us">Need Help? Contact Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms Of Service</string>
+    <string name="settings">Settings</string>
+    <string name="notification">Notifications</string>
+    <string name="reportss">Reports</string>
+    <string name="connectwithfacebook">Connect With Facebook</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="loginwithfacebook">Login With Facebook</string>
+    <string name="update">UPDATE</string>
+    <string name="attitudeopentext">Attitude Open Text</string>
+    <string name="attitude_single_choice">Attitude Single Choice</string>
+    <string name="attitude_scale">Attitude Scale</string>
+    <string name="ok">Ok</string>
+    <string name="home">Home</string>
+    <string name="this_is_slider_re">scale_first_line</string>
+    <string name="singlechoice">singlechoice</string>
+    <string name="logout">Logout</string>
+    <string name="survey_intro">Welcome to Survey</string>
+    <string name="survey_description">this is the survey done for the entertainment.</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
+    <string name="search">Search</string>
+    <string name="verification">Verification</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="spinner_description">this_is_the_description_of_the_attitude</string>
+    <string name="already_registered">You have already been registered with this email.Please login.</string>
+    <string name="error_password_length">Please enter password of length 8 character.</string>
+    <string name="enter_password">Enter the password</string>
+    <string name="feedback_limit_cross">Please provide your feedback having length from 1 to 500 characters.</string>
+    <string name="error_compulsion">The fields are compulsary</string>
+    <string name="error_email_address">The email address you entered is not correct</string>
+    <string name="tap">text_name</string>
+    <string name="lorem_epsum">Lorem Ipsum has been the industry.Lorem
+        Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </string>
+    <string name="worst">Worst</string>
+    <string name="best">Best</string>
+    <string name="select_one">Select One</string>
+    <string name="slide_left">Slide/tap left to disagree</string>
+    <string name="slide_right">Slide/tap right to agree</string>
+    <string name="report">Report</string>
+    <string name="reports">Reports</string>
+    <string name="patient_value">Patient Values</string>
+    <string name="importance">Importance</string>
+    <string name="hella_polaroid">Hella Polaroid</string>
+    <string name="high_importance">High Importance</string>
+    <string name="moderate_importance">Moderate Importance</string>
+    <string name="low_importance">Low Importance</string>
+    <string name="my_report">My Report</string>
+    <string name="people_like_you">People Like Me</string>
+    <string name="everyone">Everyone</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="done">Done</string>
+    <string name="view_report">View Report</string>
+    <string name="name">Name</string>
+    <string name="read_more">Read More</string>
+    <string name="tryAgain">Try Again</string>
+    <string name="collapse">Read Less</string>
+    <string name="expand">Read More</string>
+    <string name="offline_message">The internet connections seems to be offline</string>
+    <string name="empty_feedback">Please provide your feedback.</string>
+
+    <style name="Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+
+    <style name="MySeekBarTheme" parent="Widget.AppCompat.SeekBar">
+        <item name="colorAccent">#ff6600</item>
+    </style>
+
+
 </resources>

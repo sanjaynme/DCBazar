@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/attitude_background"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dce_question_text"
+        fontPath="@string/font_proxima_nova_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_30dp"
+        android:layout_marginRight="@dimen/dimen_30dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@color/attitude_background"
+        android:ellipsize="marquee"
+        android:maxLines="4"
+        android:text="@string/lorem_epsum"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_dce_scenarios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_dce_button"
+        android:layout_below="@+id/tv_dce_question_text"
+        android:background="@color/white"
+        android:padding="@dimen/dimen_16dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_dce_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dimen_42dp"
+        android:layout_marginRight="@dimen/dimen_42dp"
+        android:weightSum="2.5">
+
+        <Button
+            android:id="@+id/btn_dce_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/dce_survey_no_button"
+            android:text="@string/no"
+            android:textColor="@color/white" />
+
+        <FrameLayout
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_30dp"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:id="@+id/btn_dce_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/dce_survey_yes_button"
+            android:text="@string/yes"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

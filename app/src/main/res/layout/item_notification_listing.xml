@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_notification"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_survey_image"
+            android:layout_width="@dimen/dimen_60dp"
+            android:layout_height="@dimen/dimen_70dp"
+            android:layout_marginLeft="@dimen/dimen_63px"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/rightarrow"
+            android:id="@+id/rl_text"
+            android:layout_toRightOf="@id/iv_survey_image"
+            android:orientation="vertical">
+
+            <com.ebpearls.choiceapp.customviews.CapitalizedTextView
+                android:id="@+id/tv_notification_title"
+                fontPath="@string/font_proxima_nova_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:textSize="@dimen/dimen_13sp"
+                android:textColor="@color/black"
+                android:text="A NEW DCE SURVEY POSTED"
+               />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_25dp"
+                android:id="@+id/ll_hours_ago"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_below="@id/tv_notification_title"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_clock"/>
+
+                <com.ebpearls.choiceapp.customviews.CapitalizedTextView
+                    android:id="@+id/tv_hours_ago"
+                    fontPath="@string/font_proxima_nova_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/dimen_12sp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:textColor="@color/notification_text_color"
+                    android:text="20 hours agao"/>
+
+                <View
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_width="@dimen/dimen_3dp"
+                    android:layout_height="@dimen/dimen_3dp"
+                    android:background="@drawable/circular_btn_history"/>
+
+                <com.ebpearls.choiceapp.customviews.CapitalizedTextView
+                    android:id="@+id/tv_notification_survey_name"
+                    fontPath="@string/font_proxima_nova_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:maxLength="25"
+                    android:ellipsize="end"
+                    android:layout_height="@dimen/dimen_14sp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/dimen_12sp"
+                    android:textColor="@color/notification_text_color"
+                    android:text="20 hours agao"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/rightarrow"
+            android:src="@drawable/ic_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/notification_listing_background"
+            android:layout_toRightOf="@id/iv_survey_image"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

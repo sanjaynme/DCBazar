@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/surveyintro">
+
+        <ImageView
+            android:id="@+id/iv_pop_backarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:padding="@dimen/dimen_20dp"
+            android:src="@drawable/ic_cross" />
+
+        <Button
+            android:id="@+id/btnnext"
+            style="@style/Button"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_40dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="@string/start" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btnnext"
+            android:layout_below="@+id/iv_pop_backarrow"
+            android:fillViewport="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/profile_progressbar"
+                    android:layout_width="50dp"
+                    android:layout_height="300dp"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/iv_profile_image"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_centerHorizontal="true" />
+
+                <com.ebpearls.choiceapp.customviews.CapitalizedTextView
+                    android:id="@+id/tv_introduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_profile_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginRight="@dimen/dimen_30dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_17sp" />
+
+                <com.ebpearls.choiceapp.customviews.CapitalizedTextView
+                    android:id="@+id/tv_surveyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_introduction"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_17sp" />
+
+                <com.ebpearls.choiceapp.customviews.CapitalizedTextView
+                    android:id="@+id/tv_description"
+                    fontPath="@string/font_proxima_nova_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_surveyName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_12sp" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>
+

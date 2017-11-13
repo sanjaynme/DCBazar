@@ -25,4 +25,51 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
+    compile "com.android.support:design:$rootProject.ext.supportLibraryVersion"
+    compile "com.android.support:cardview-v7:$rootProject.ext.supportLibraryVersion"
+    compile "com.android.support:palette-v7:$rootProject.ext.supportLibraryVersion"
+    compile "com.android.support.constraint:constraint-layout:$rootProject.ext.constraintLayoutVersion"
+
+    //Retrofit
+    compile("com.squareup.retrofit2:retrofit:$rootProject.ext.retrofitVersion") {
+        // exclude Retrofit’s OkHttp peer-dependency module and define your own module import
+        exclude module: 'okhttp'
+    }
+    compile "com.squareup.okhttp3:okhttp:$rootProject.ext.okhttpVersion"
+    compile "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.okhttpVersion"
+    compile "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
+    compile "com.squareup.retrofit2:converter-gson:$rootProject.ext.gsonConverterVersion"
+
+    //Image Caching
+    compile "de.hdodenhof:circleimageview:$rootProject.ext.circleImageViewVersion"
+    compile "com.squareup.picasso:picasso:$rootProject.ext.picassoVersion"
+
+    //Calligraphy for custom font
+    compile "uk.co.chrisjenx:calligraphy:$rootProject.ext.calligraphyVersion"
+
+    //Butterknife
+    compile "com.jakewharton:butterknife:$rootProject.ext.butterKnifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterKnifeVersion"
+
+    compile "pub.devrel:easypermissions:$rootProject.ext.easyPermissionVersion"
+    compile "com.facebook.android:facebook-android-sdk:$rootProject.ext.facebookVersion"
+    compile "com.android.support:multidex:$rootProject.ext.multidexVersion"
+
+    //glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+
+//    //helpshift integration
+//    //helpshift integration
+//    compile "com.helpshift:android-helpshift-aar:$rootProject.ext.helpShiftVersion"
+//
+//    //stetho for realm
+//    compile 'com.facebook.stetho:stetho:1.5.0'
+//    compile 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+//    compile 'com.uphyca:stetho_realm:2.0.0'
+
+//    //firebase messaging
+//    compile 'com.google.firebase:firebase-messaging:11.6.1'
 }
+//apply plugin: 'com.google.gms.google-services'

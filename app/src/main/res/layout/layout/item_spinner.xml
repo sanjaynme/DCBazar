@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/dimen_12sp"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_8dp"
+    android:background="@color/signup_edittext_background"
+    android:text="Hello">
+    <TextView
+        android:id="@+id/tv_default_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Income"
+        android:textColor="@color/signup_underline"
+        />
+
+    <TextView
+        android:id="@+id/tv_default_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/signup_underline"
+        android:text="(Optional)"/>
+
+</LinearLayout>
+
+
+

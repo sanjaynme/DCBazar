@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_landing_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dimen_596px"
+            android:layout_marginTop="@dimen/dimen_350px"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ic_choice_app_logo"
+            android:contentDescription="@null"
+            android:scaleType="centerInside" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_205px"
+            android:layout_marginLeft="@dimen/dimen_64px"
+            android:layout_marginRight="@dimen/dimen_64px"
+            android:background="@drawable/background_login_button"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_94px">
+
+            <TextView
+                android:id="@+id/tv_or_youcan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:text="@string/or_you_can"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_16dp"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_toLeftOf="@id/tv_or_youcan"
+                android:layout_toStartOf="@id/tv_or_youcan"
+                android:background="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:layout_marginRight="@dimen/dimen_16dp"
+                android:layout_toEndOf="@id/tv_or_youcan"
+                android:layout_toRightOf="@id/tv_or_youcan"
+                android:background="@color/white" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_create_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_205px"
+            android:layout_marginBottom="@dimen/dimen_64px"
+            android:layout_marginLeft="@dimen/dimen_64px"
+            android:layout_marginRight="@dimen/dimen_64px"
+            android:layout_marginTop="@dimen/dimen_94px"
+            android:background="@drawable/create_account"
+            android:text="@string/create_an_account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_14sp" />
+    </LinearLayout>
+</ScrollView>

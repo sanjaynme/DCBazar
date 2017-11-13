@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fl_instruction"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_20dp">
+
+        <TextView
+            android:id="@+id/tv_survey_intro"
+            fontPath="@string/font_proxima_nova_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen_50dp"
+            android:layout_marginRight="@dimen/dimen_50dp"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16sp" />
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/fl_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_bwsdce_next"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/ll_bws_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_16dp"
+            android:paddingRight="@dimen/dimen_16dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_worst"
+                fontPath="@string/font_proxima_nova_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bws_worst"
+                android:text="@string/worst"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_12sp" />
+
+
+            <Button
+                android:id="@+id/btn_best"
+                fontPath="@string/font_proxima_nova_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bws_best"
+                android:text="@string/best"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dce_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp">
+
+                <Button
+                    android:id="@+id/tv_or_youcan"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circular_btn" />
+
+                <View
+                    android:id="@+id/view_red"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_toLeftOf="@id/tv_or_youcan"
+                    android:layout_toStartOf="@id/tv_or_youcan"
+                    android:background="@color/dce_instruction_red" />
+
+                <View
+                    android:id="@+id/view_green"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:layout_marginRight="@dimen/dimen_16dp"
+                    android:layout_toEndOf="@id/tv_or_youcan"
+                    android:layout_toRightOf="@id/tv_or_youcan"
+                    android:background="@color/dce_instruction_green" />
+
+                <TextView
+                    android:id="@+id/tv_left"
+                    fontPath="@string/font_sofiapro_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_or_youcan"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_toLeftOf="@+id/tv_or_youcan"
+                    android:layout_toStartOf="@+id/tv_or_youcan"
+                    android:text="@string/slide_left"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/green_text"
+                    fontPath="@string/font_sofiapro_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_left"
+                    android:layout_alignBottom="@+id/tv_left"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:layout_marginRight="@dimen/dimen_16dp"
+                    android:text="@string/slide_right"
+                    android:textColor="@color/black" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_bwsdce_next"
+        style="@style/Button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="@dimen/dimen_20dp" />
+
+
+</RelativeLayout>

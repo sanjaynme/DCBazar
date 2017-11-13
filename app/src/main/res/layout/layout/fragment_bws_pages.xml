@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <Button
+        android:id="@+id/btn_bws_next"
+        style="@style/Button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="@dimen/dimen_10dp" />
+
+    <TextView
+        android:id="@+id/tv_bws_question_text"
+        fontPath="@string/font_proxima_nova_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@color/white"
+        android:ellipsize="marquee"
+        android:maxLines="4"
+        android:text="@string/lorem_epsum"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_bws_positions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_bws_next"
+        android:layout_below="@+id/tv_bws_question_text"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:splitMotionEvents="false" />
+
+
+</RelativeLayout>

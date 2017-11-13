@@ -1,6 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!--CommonColors-->
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#c4c0c4</color>
+    <color name="progress_blue">#1E9DFE</color>
+
+    <color name="grey">#88858E98</color>
+    <color name="white">#FFFFFF</color>
+    <color name="faint_white">#fcfcfc</color>
+    <color name="black">#000011</color>
+    <color name="transparent_black">#64000000</color>
+    <color name="medium_green">#000000</color>
+    <color name="orange">#FF7E3C</color>
+    <color name="alert_title_color">#3F9D2F</color>
+    <color name="alert_message_color">#a3a3a3</color>
+    <color name="dialog_title_color">#3F9D2F</color>
+    <color name="dialog_message_color">#a3a3a3</color>
+
+    <color name="dce_instruction_green">#5fd46d</color>
+    <color name="dce_instruction_red">#ed4e52</color>
+    <color name="dce_item_grey">#8f8e94</color>
+
+    <!--Alert message-->
+    <color name="color_white_f2f2f2_transparent">#D9f2f2f2</color>
+    <color name="landing_color">#424242</color>
+    <color name="login_status_color">#444444</color>
+
+    <!--toolbar color background-->
+    <color name="signup_background">#424242</color>
+    <color name="signup_edittext_background">#3A3A3A</color>
+    <color name="signup_underline">#8A8A8f</color>
+    <color name="signup_fbbutton_background">#487DBE</color>
+
+    <!--view-->
+    <color name="edittext_border_gray">#595959</color>
+
+    <!--register-->
+    <color name = "register_edittext_background">#595959</color>
+    <color name = "register_background">#414141</color>
+    <color name = "register_btn_continue">#3F9D2F</color>
+    <color name = "register_btn_signup">#3F9D2F</color>
+    <color name = "register_edittext_hint">#A1A1A1</color>
+    <color name="splash_color">#FF8539</color>
+    <color name = "splash_color_faint">#80ff8539</color>
+
+    <!--homepage-->
+    <color name="home_searchbackground">#c8c7cc</color>
+
+    <!--survey attitude-->
+    <color name = "attitude_background">#cecece</color>
+    <color name = "attitude_title">#f77e37</color>
+
+    <color name="menu_background">#ECECEC</color>
+    <color name="menu_underline">#C9C8CD</color>
+
+    <!--dynamic pages-->
+    <color name="scale_text">#111111</color>
+    <color name="green">#5fd46d</color>
+    <color name="red">#F14B52</color>
+    <color name="light_orange">#FF8637</color>
+    <color name="spinner_default">#acacac</color>
+    <color name="report_heading">#3a3b3b</color>
+
+    <!--history-->
+    <color name="history_item_grey">#8a8a8f</color>
+    <!--report page-->
+    <color name="high_imp_bar_start_green">#5fd56e</color>
+    <color name="high_imp_bar_end_green">#72ef81</color>
+    <color name="low_imp_bar_start_green">#97dea0</color>
+    <color name="low_imp_bar_end_green">#a3eeac</color>
+    <color name="high_imp_bar_start_orange">#ff4259</color>
+    <color name="high_imp_bar_end_orange">#ff8439</color>
+    <color name="low_imp_bar_start_orange">#f697a2</color>
+    <color name="low_imp_bar_end_orange">#f6b892</color>
+    <color name="high_imp_bar_start_blue">#42bfff</color>
+    <color name="high_imp_bar_end_blue">#43d0ff</color>
+    <color name="low_imp_bar_start_blue">#97d5f6</color>
+    <color name="low_imp_bar_end_blue">#97def6</color>
+
+
+
+    <!--feedback-->
+    <color name="feedback_edittext_background">#F8F8F8</color>
+
+    <!--completedsurvey-->
+    <color name = "button_background">#ff8439</color>
+
+    <!--notificationlisting-->
+    <color name="notification_listing_background">#ECECEC</color>
+    <color name="notification_text_color">#8a8a8f</color>
+
 </resources>

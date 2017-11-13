@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_dynamic_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/attitude_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_dynamic_page_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_next"
+        android:background="@color/attitude_background">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_attitude"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/Button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10dp" />
+
+
+</RelativeLayout>

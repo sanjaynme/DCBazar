@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_history_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dimen_100dp">
+
+        <ImageView
+            android:id="@+id/iv_history_profile"
+            android:layout_width="@dimen/dimen_72dp"
+            android:layout_height="@dimen/dimen_72dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dimen_15dp"
+            android:layout_marginLeft="@dimen/dimen_56px"
+            android:layout_marginStart="@dimen/dimen_56px"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:padding="0dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_modified_time"
+            fontPath="@string/font_proxima_nova_thin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_history_survey_name"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="@dimen/dimen_38px"
+            android:ellipsize="end"
+            android:inputType="textCapSentences"
+            android:lines="1"
+            android:maxLines="1"
+            android:textSize="@dimen/dimen_13sp"
+            tools:text="Time" />
+
+        <TextView
+            android:id="@+id/tv_modified_date"
+            fontPath="@string/font_proxima_nova_thin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_history_survey_name"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="@dimen/dimen_38px"
+            android:layout_toLeftOf="@+id/iv_history_checkbox"
+            android:layout_toRightOf="@+id/tv_modified_time"
+            android:ellipsize="end"
+            android:inputType="textCapSentences"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/history_item_grey"
+            android:textSize="@dimen/dimen_13sp"
+            tools:text="Date" />
+
+        <Button
+            android:id="@+id/btn_history_point"
+            android:layout_width="@dimen/dimen_3dp"
+            android:layout_height="@dimen/dimen_3dp"
+            android:layout_below="@+id/tv_history_survey_name"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_17dp"
+            android:layout_toRightOf="@+id/tv_modified_time"
+            android:background="@drawable/circular_btn_history" />
+
+        <TextView
+            android:id="@+id/tv_history_survey_name"
+            fontPath="@string/font_proxima_nova_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_history_profile"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="88dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:ellipsize="end"
+            android:inputType="textCapSentences"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16sp"
+            tools:text="SurveyName" />
+
+        <ImageView
+            android:id="@+id/iv_history_checkbox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_64px"
+            android:layout_marginRight="@dimen/dimen_64px"
+            android:contentDescription="@null"
+            android:padding="0dp"
+            android:src="@drawable/ic_history_check" />
+
+        <ImageView
+            android:id="@+id/iv_history_incomplete_checkbox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_64px"
+            android:layout_marginRight="@dimen/dimen_64px"
+            android:contentDescription="@null"
+            android:padding="0dp"
+            android:src="@drawable/ic_history_uncheck"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/iv_history_profile"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:background="@color/grey" />
+    </RelativeLayout>
+</RelativeLayout>

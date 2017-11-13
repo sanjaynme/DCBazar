@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_home_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/home_searchbackground">
+
+        <EditText
+            android:id="@+id/et_search"
+            style="@style/EllipsizeEditText"
+            fontPath="@string/font_proxima_nova_regular"
+            android:layout_width="match_parent"
+            android:layout_height="35.5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_box"
+            android:cursorVisible="false"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            fontPath="@string/font_proxima_nova_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_search"
+            android:inputType="textCapWords"
+            android:text="@string/search" />
+
+        <ImageButton
+            android:id="@+id/iv_delete_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/dimen_10dp"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            android:visibility="gone"
+            android:src="@drawable/grey_cross_icon"
+            android:contentDescription="@null" />
+
+    </RelativeLayout>
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sr_survey_list"
+        android:layout_below="@+id/header_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+    <LinearLayout
+        android:id="@+id/ll_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_51px"
+            android:layout_marginRight="@dimen/dimen_51px"
+            android:layout_marginTop="@dimen/dimen_48px"
+            tools:listitem="@layout/item_home"/>
+
+    </LinearLayout>
+
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+
+</LinearLayout>

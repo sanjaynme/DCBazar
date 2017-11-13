@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_15dp"
+    android:background="@android:color/white">
+    <TextView
+        android:id="@+id/tv_patient_values"
+        android:text="@string/patient_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/toolbar_title_sixe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"/>
+
+    <View
+        android:id="@+id/view_report_separator"
+        android:layout_below="@id/tv_patient_values"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@color/menu_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"/>
+    <TextView
+        android:id="@+id/tv_importance"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_below="@id/view_report_separator"
+        android:text="@string/importance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_20sp"
+        android:textColor="@color/report_heading"/>
+
+    <com.ebpearls.choiceapp.reportModule.reportDetails.view.CustomReportItemView
+        android:id="@+id/custom_view_parent_survey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/tv_importance" />
+
+</RelativeLayout>

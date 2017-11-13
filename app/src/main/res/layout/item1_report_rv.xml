@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.ebpearls.choiceapp.customviews.ExpandableTextView
+        android:id="@+id/tv_item1_report_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:text="@string/lorem_epsum"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_12sp"
+        app:animation_duration="1000" />
+
+    <com.ebpearls.choiceapp.customviews.CapitalizedTextView
+        android:id="@+id/tv_report_readMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item1_report_rv"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:padding="@dimen/dimen_10dp"
+        android:text="@string/read_more"
+        android:textColor="@color/low_imp_bar_end_blue" />
+
+</RelativeLayout>

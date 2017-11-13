@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ebpearls.choiceapp.customviews.CapitalizedTextView
+            android:id="@+id/tv_scalename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_25dp"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal"
+            android:lines="4"
+            android:text="@string/lorem_epsum"
+            android:textColor="@color/attitude_title" />
+
+        <SeekBar
+            android:id="@+id/sb_scale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_scalename"
+            android:layout_marginLeft="@dimen/dimen_30px"
+            android:layout_marginRight="@dimen/dimen_30px"
+            android:padding="@dimen/dimen_8dp"
+            android:thumb="@drawable/seekbar_thumb" />
+
+        <com.ebpearls.choiceapp.customviews.CapitalizedTextView
+            android:id="@+id/tv_minimum"
+            fontPath="@string/font_proxima_nova_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sb_scale"
+            android:layout_marginLeft="@dimen/dimen_58px"
+            android:layout_marginTop="@dimen/dimen_3dp"
+            android:inputType="textCapWords"
+            android:text="1"
+            android:textColor="@color/orange" />
+
+        <com.ebpearls.choiceapp.customviews.CapitalizedTextView
+            android:id="@+id/tv_progress"
+            fontPath="@string/font_proxima_nova_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sb_scale"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:textColor="@color/orange"
+            android:visibility="gone" />
+
+        <com.ebpearls.choiceapp.customviews.CapitalizedTextView
+            android:id="@+id/tv_maximum"
+            fontPath="@string/font_proxima_nova_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/sb_scale"
+            android:layout_below="@+id/sb_scale"
+            android:layout_marginRight="@dimen/dimen_37px"
+            android:layout_marginTop="@dimen/dimen_3dp"
+            android:text="10"
+            android:textColor="@color/orange" />
+
+        <com.ebpearls.choiceapp.customviews.CapitalizedTextView
+            android:id="@+id/tv_scale_firstline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_minimum"
+            android:layout_marginBottom="@dimen/dimen_25dp"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:gravity="center"
+            android:padding="@dimen/dimen_30px"
+            android:text="@string/lorem_epsum"
+            android:textColor="@color/scale_text"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <!--<TextView
+            android:id="@+id/tv_scale_secondline"
+            android:layout_below="@id/tv_scale_firstline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_105px"
+            android:inputType="textCapWords"
+            android:padding="@dimen/dimen_30px"
+            android:text="this is the description of the attitude"
+            android:textColor="#111111"
+            android:textSize="19sp" />-->
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
